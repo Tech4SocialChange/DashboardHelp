@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="sci.dashboard.dashboardhelp.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rem_row"
+
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Emergency Message"
+         android:layout_marginTop="10dp"
+         android:textSize="22sp"
+         android:textColor="@color/black"
+         android:gravity="center_horizontal"
+         />
+
+
+        <EditText
+            android:id="@+id/remark_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remark"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:hint="Write Message here." />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:id="@+id/prev_id"
+            android:layout_gravity="center_horizontal"
+            android:onClick="message"
+            android:background="@drawable/buttoncolor_grey"
+            android:textSize="26sp"
+            android:layout_marginLeft="2dp"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Helpline Call"
+
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rem_row22"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fire Service"
+            android:background="@drawable/buttoncolor_grey"
+            android:id="@+id/fire_id"
+            android:layout_gravity="center_horizontal"
+            android:onClick="fire"
+            android:textSize="26sp"
+            android:layout_marginLeft="2dp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Station"
+            android:background="@drawable/buttoncolor_grey"
+            android:id="@+id/emergency_"
+            android:layout_gravity="center_horizontal"
+            android:onClick="police"
+            android:textSize="26sp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rem_row222"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambulance"
+                android:background="@drawable/buttoncolor_grey"
+                android:id="@+id/ambulence_id"
+                android:layout_gravity="center_horizontal"
+                android:onClick="ambulance"
+                android:textSize="26sp"
+                android:layout_marginLeft="2dp"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+
+                android:background="@drawable/buttoncolor_grey"
+                android:id="@+id/others"
+                android:layout_gravity="center_horizontal"
+                android:onClick="others"
+                android:textSize="26sp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
